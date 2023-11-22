@@ -1,0 +1,35 @@
+
+BCrypt:
+
+Funkcja: Algorytm BCrypt został specjalnie zaprojektowany do bezpiecznego przechowywania haseł.
+Działanie: Dodaje soli do hasła i używa odpowiednio długiego czasu obliczeń, co czyni ataki brute-force bardziej czasochłonnymi.
+
+Hash (Funkcja Skrótu):
+
+Funkcja: Funkcja skrótu przekształca dane, takie jak hasło, na stałą długość, zwany skrótem.
+Działanie: Dobra funkcja skrótu jest trudna do odwrócenia, co oznacza, że nie można odtworzyć oryginalnych danych z ich skrótu. Popularne funkcje skrótu to SHA-256 czy SHA-3.
+
+Salt (Sól):
+
+Funkcja: Sól to losowy ciąg danych, który jest dodawany do hasła przed zastosowaniem funkcji skrótu (hash).
+Działanie: Sól sprawia, że nawet identyczne hasła generują różne wartości skrótu, co utrudnia ataki typu rainbow table. Każdy użytkownik powinien mieć unikalną sól.
+
+KDF (Password-Based Key Derivation Function):
+
+Funkcja: KDF jest używane do przekształcania hasła w klucz kryptograficzny.
+Działanie: KDF, takie jak PBKDF2, Argon2 czy bcrypt, wprowadza opóźnienia i iteracje, co znacznie utrudnia ataki brute-force. Są one zaprojektowane specjalnie do przechowywania haseł.
+
+Protokoły Autentykacji:
+
+Funkcja: Protokoły autentykacji służą do weryfikacji tożsamości użytkownika.
+Działanie: Popularne protokoły to np. OAuth, OpenID czy JWT (JSON Web Token). W kontekście przechowywania haseł ważne jest, aby korzystać z bezpiecznych protokołów autentykacji, które chronią dane uwierzytelniające.
+
+Algorytmy Szyfrowania:
+
+Funkcja: Algorytmy szyfrowania są używane do zabezpieczania danych w ruchu lub w bazie danych.
+Działanie: Popularne algorytmy szyfrowania to AES (Advanced Encryption Standard) czy Twofish. W kontekście przechowywania haseł w bazie danych, jednak najczęściej używane są funkcje skrótu, a nie algorytmy szyfrowania.
+
+
+
+
+
